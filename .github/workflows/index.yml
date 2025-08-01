@@ -11,4 +11,5 @@ on:
 jobs:
   index:
     uses: "smaudd/leafcutter/.github/workflows/indexer.yml@main"
-    secrets: "inherit"
+    with:
+      go-version: "1.21"
