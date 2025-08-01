@@ -1,0 +1,14 @@
+name: Leafcutter Indexer
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  index:
+    uses: "smaudd/leafcutter/.github/workflows/indexer.yml@main"
+    secrets: "inherit"
