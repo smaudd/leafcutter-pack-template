@@ -15,4 +15,4 @@ jobs:
   index:
     uses: "smaudd/leafcutter/.github/workflows/indexer.yml@main"
     with:
-      go-version: "1.21"
+       samples: "samples" # Needs to be implemented it does nothing ATM
