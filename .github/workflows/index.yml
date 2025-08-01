@@ -8,6 +8,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write  # Required for auto-committing
+
 jobs:
   index:
     uses: "smaudd/leafcutter/.github/workflows/indexer.yml@main"
